@@ -13,8 +13,8 @@ namespace Submarine {
             foreach (string[] instruction in Instructions)
             {
                 instruction.Split(" ");
-                string direction = instruction[1];
-                int value = int.Parse(instruction[2]);
+                string direction = instruction[0];
+                int value = int.Parse(instruction[1]);
 
                 if(direction == "forward")
                 {
